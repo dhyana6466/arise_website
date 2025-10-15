@@ -1,0 +1,48 @@
+<!-- ======================================
+     MAIN PAGE USING THE NAVBAR COMPONENT
+     Loads navbar.html dynamically using jQuery
+     ====================================== -->
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Main Site with Navbar</title>
+       <link rel="stylesheet" href="navbar/navbar.css">
+     </head>
+     <body>
+     
+       <!-- Navbar will be loaded here -->
+       <div id="navbar-container"></div>
+     
+       <!-- Main content sections -->
+       <section>
+         <div class="inner">
+           <h1>Welcome!</h1>
+           <p>This is the first section of the page.</p>
+         </div>
+       </section>
+     
+       <section class="alternate" id="demosection2">
+         <div class="inner">
+           <h1>Second Section</h1>
+           <p>The navbar changes color when you reach here.</p>
+         </div>
+       </section>
+     
+       <!-- Import jQuery first -->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     
+       <!-- Import the navbar behavior script -->
+       <script src="navbar/navbar.js"></script>
+     
+       <!-- Load the navbar HTML dynamically -->
+       <script>
+         $(function() {
+           $("#navbar-container").load("navbar/navbar.html");
+         });
+       </script>
+     
+     </body>
+     </html>
+     

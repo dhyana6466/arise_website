@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Clients | Arise HVAC Solutions</title>
+
+  <!-- Include Navbar + Multiverse CSS -->
+  <link rel="stylesheet" href="../navbar/navbar.css" />
+  <link rel="stylesheet" href="clients.css" />
+  <noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+  <!-- 🔽 Navbar placeholder -->
+  <div id="navbar-placeholder"></div>
+  <!-- 🔼 Navbar will be loaded here dynamically -->
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1><a href="../index.html"><strong>Clients</strong> – Arise HVAC Solutions</a></h1>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- CLIENT 1 -->
+      <article class="thumb">
+        <a href="../assets/images/schneider-electric.jpg" class="image"><img src="..//assets/images/schneider-electric.jpg" alt="Schneider Electric" /></a>
+        <h2>Schneider Electric</h2>
+      </article>
+
+      <!-- CLIENT 2 -->
+      <article class="thumb">
+        <a href="../assets/images/mitsubishi-electric.jpg" class="image"><img src="..//assets/images/mitsubishi-electric.jpg" alt="Mitsubishi Electic" /></a>
+        <h2>Mitsubishi Electric</h2>
+      </article>
+
+      <!-- CLIENT 3 -->
+      <article class="thumb">
+        <a href="..//assets/images/samsung.jpg" class="image"><img src="../assets/images/samsung.jpg" alt="Samsung" /></a>
+        <h2>Samsung</h2>
+      </article>
+
+      <!-- CLIENT 4 -->
+      <article class="thumb">
+        <a href="..//assets/images/blue-star.jpg" class="image"><img src="..//assets/images/blue-star.jpg" alt="Blue Star" /></a>
+        <h2>Blue Star</h2>
+      </article>
+
+      <!-- CLIENT 5 -->
+      <article class="thumb">
+        <a href="../assets/images/kirloskar.jpg" class="image"><img src="..//assets/images/kirloskar.jpg" alt="Kirloskar" /></a>
+        <h2>Kirloskar</h2>
+      </article>
+
+      <!-- CLIENT 6 -->
+      <article class="thumb">
+        <a href="..//assets/images/mother-dairy.jpg" class="image"><img src="..//assets/images/mother-dairy.jpg" alt="Mother Dairy" /></a>
+        <h2>Mother Dairy</h2>
+      </article>
+
+      <!-- CLIENT 7 -->
+      <article class="thumb">
+        <a href="..//assets/images/vestar.jpg" class="image"><img src="..//assets/images/vestar.jpg" alt="Vestar" /></a>
+        <h2>Vestar</h2>
+      </article>
+
+      <!-- CLIENT 8 -->
+      <article class="thumb">
+        <a href="..//assets/images/rittal.jpg" class="image"><img src="..//assets/images/rittal.jpg" alt="Rittal" /></a>
+        <h2>Rittal</h2>
+      </article>
+
+      <!-- CLIENT 9 -->
+      <article class="thumb">
+        <a href="..//assets/images/coca-cola.jpg" class="image"><img src="..//assets/images/coca-cola.jpg" alt="Coca-Cola" /></a>
+        <h2>Coca-Cola</h2>
+      </article>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="panel">
+      <div class="inner split">
+        <div>
+          <section>
+            <h2>About Arise HVAC Solutions</h2>
+            <p>Trusted nationwide for delivering cutting-edge HVAC installations and maintenance for government, corporate, and institutional clients.</p>
+          </section>
+          <p class="copyright">
+            &copy; 2025 Arise HVAC Solutions Pvt Ltd. Design: <a href="http://html5up.net">HTML5 UP</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Load shared navbar
+    fetch("../navbar/navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      })
+      .catch(err => console.error("Navbar failed to load:", err));
+  </script>
+
+<script src="jquery.min.js"></script>
+<script src="jquery.poptrox.min.js"></script>
+<script src="browser.min.js"></script>
+<script src="breakpoints.min.js"></script>
+<script src="util.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

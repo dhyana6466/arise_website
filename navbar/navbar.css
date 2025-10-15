@@ -1,0 +1,112 @@
+/* ======================================
+   CLEAN NAVBAR STYLES (Shared across all pages)
+   ====================================== */
+
+   *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* NAVBAR */
+  #topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background 0.4s ease, padding 0.4s ease;
+  }
+  
+  #topnav .inner {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  /* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Logo image */
+.logo img {
+  height: 45px;
+  width: auto;
+  vertical-align: middle;
+  transition: 0.4s ease;
+}
+
+/* Shrink logo on scroll */
+body.header-fixed .logo img {
+  height: 35px;
+}
+ 
+  
+  /* NAV LINKS */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #ffcc00;
+  }
+  
+  /* HEADER-FIXED STYLE (on scroll) */
+  body.header-fixed #topnav {
+    background: #111;
+    color: white;
+    padding: 0.6rem 0;
+  }
+  
+  body.header-fixed #topnav .logo,
+  body.header-fixed #topnav nav a {
+    color: white;
+  }
+  
+  /* ALT-HEADER STYLE (when entering dark section) */
+  #topnav.alt-header {
+    background: #fff;
+    color: black;
+  }
+  
+  #topnav.alt-header a,
+  #topnav.alt-header .logo {
+    color: black;
+  }
+  
+  /* Space below navbar */
+  body {
+    padding-top: 80px;
+  }
